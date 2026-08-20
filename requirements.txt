@@ -1,0 +1,18 @@
+# --- Análisis de datos ---
+numpy
+pandas
+pyarrow          # necesario para leer/escribir preprocessed.pkl sin errores
+
+# --- Visualización (eda.ipynb) ---
+matplotlib
+seaborn
+missingno
+
+# --- Modelado (eda.ipynb + modeling.ipynb) ---
+scikit-learn>=1.6   # >=1.6 es obligatorio: usa sklearn.frozen.FrozenEstimator (calibración)
+imbalanced-learn    # provee imblearn.over_sampling.SMOTE
+joblib              # para guardar el modelo calibrado final
+
+# --- Para correr los notebooks ---
+notebook
+ipykernel
